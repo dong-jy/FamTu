@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,7 +80,8 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.PhotoViewHol
         FileItem item = mMedias.get(position);
         Glide.with(mContext)
                 .load(item.getFilePath())
-                .placeholder(R.drawable.aurora_picture_not_found)
+                .apply(RequestOptions.centerCropTransform()
+                .placeholder(R.drawable.aurora_picture_not_found))
                 .into(holder.ivPhoto);
 
         if (mSelectedItems.contains(position)) {    // Current photo is selected
