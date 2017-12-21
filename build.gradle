@@ -2,22 +2,22 @@
 
 buildscript {
     repositories {
-        repositories {
-            maven { url "https://jitpack.io" }
-        }
-
-        maven {
-            url 'http://maven.aliyun.com/nexus/content/groups/public/'
-        }
-        jcenter {
-            url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
-        }
-//        jcenter()
-        google()
-        mavenCentral()
-        maven {
-            url 'https://oss.sonatype.org/content/repositories/snapshots'
-        }
+//        repositories {
+//            maven { url "https://jitpack.io" }
+//        }
+//
+//        maven {
+//            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+//        }
+//        jcenter {
+//            url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
+//        }
+////        jcenter()
+//        google()
+//        mavenCentral()
+//        maven {
+//            url 'https://oss.sonatype.org/content/repositories/snapshots'
+//        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
